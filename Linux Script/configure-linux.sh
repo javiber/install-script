@@ -792,6 +792,9 @@ if [ "$1" != "being-invoked" ]; then
 			-s | --suppress )
 				SUPPRESS_PROMPT="true"
 				;;
+			-n | --no-verify )
+				LINUX_DO_VERIFICATION="false"
+				;;
 			-h | --help)
 				usage
 				exit
